@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.base.hua.baseandroid.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a dog"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="247dp"
+        android:id="@+id/textView2"
+        app:layout_constraintLeft_toRightOf="@+id/button"
+        android:layout_marginStart="20dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        android:layout_marginBottom="20dp"
+        tools:layout_constraintBottom_creator="1" />
+
+    <Button
+        android:text="点我"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="278dp"
+        android:id="@+id/button"
+        style="@color/abc_input_method_navigation_guard"
+        android:onClick="@string/abc_action_bar_home_description"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView"
+        android:layout_marginStart="34dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:layout_marginTop="15dp"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="342dp"
+        android:id="@+id/textView"
+        app:layout_constraintLeft_toLeftOf="@+id/button"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/button"
+        tools:layout_constraintRight_creator="1" />
+
+    <ImageView
+        android:src="@drawable/dog"
+        android:layout_width="wrap_content"
+        android:layout_height="283dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:id="@+id/imageView"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/activity_main"
+        tools:layout_constraintTop_creator="1" />
+
+    <ImageButton
+        android:src="@android:drawable/ic_dialog_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="247dp"
+        tools:layout_editor_absoluteY="398dp"
+        android:id="@+id/fab"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginTop="40dp"
+        tools:layout_constraintTop_creator="0"
+        android:backgroundTint="@color/colorAccent" />
+
+</android.support.constraint.ConstraintLayout>
