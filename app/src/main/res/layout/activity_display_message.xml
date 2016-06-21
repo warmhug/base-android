@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_display_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.base.hua.baseandroid.DisplayMessageActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:text="placeholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="64dp"
+        android:id="@+id/textView4"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_display_message"
+        android:layout_marginStart="72dp"
+        tools:layout_constraintLeft_creator="0"
+        app:layout_constraintTop_toTopOf="@+id/activity_display_message"
+        android:layout_marginTop="64dp"
+        tools:layout_constraintTop_creator="0"
+        android:textSize="18sp" />
+</android.support.constraint.ConstraintLayout>
