@@ -50,9 +50,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    public void switchHandler(View view) {
+    public void showMessageIntent(View view) {
         Intent intent = new Intent(this, DisplayMessageActivity.class);
         intent.putExtra(EXTRA_MESSAGE, "my base android");
         startActivity(intent);
     }
+    public void showLV(View view) {
+        Intent intent = new Intent(this, LoadListViewActivity.class);
+        intent.putExtra(EXTRA_MESSAGE, "my base android");
+        startActivity(intent);
+    }
+
 }
