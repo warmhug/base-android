@@ -13,3 +13,8 @@ apk 下载:
 ### 优化
 - [优化布局性能](https://developer.android.com/training/improving-layouts/optimizing-layout.html#Inspect)
 - [滚动怎么更顺滑](https://developer.android.com/training/improving-layouts/smooth-scrolling.html)
+
+## 环境
+打开 Android emulator (Android AVD Manager): 
+- Go to <ANDROID_SDK>/tools and double-click on android, then in the menu select Tools -> Manage AVDs.
+- 如果设置了Android环境变量,运行: `android avd` 
