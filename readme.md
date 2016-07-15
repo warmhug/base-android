@@ -31,12 +31,18 @@ apk 下载:
     ubuntu.buct.edu.cn //北京化工大学
     mirrors.dormforce.net //（栋力无限）电子科技大学
     
-方法三: 直接从仓库网站下载再导入,如 [Android SDK | “Android 6.0” Package Direct Links](https://afterroot.wordpress.com/2016/01/01/android-sdk-android-6-0-package-direct-links/)。
+方法三: 直接从仓库网站下载再导入,如 [Android SDK | “Android 6.0” Package Direct Links](https://afterroot.wordpress.com/2016/01/01/android-sdk-android-6-0-package-direct-links/)。如何导入呢?
+
+    稍微注意能发现: Android AVD Manager 里的每一个安装项目都和 <ANDROID_SDK_root> 目录下的子目录名相对应。
+    比如下载了 sysimg_arm-23_r03.zip 文件, 应该将此文件解压到 <ANDROID_SDK_root>/system-images/android-23 目录下,
+    再重启 Android AVD Manager 会看到 "Android 6.0 (API 23) 节点下的 "ARM EABI v7a System Image | API 23, rev 3"
+    的 status 从 "Not installed" 变为 "Installed" , 导入成功。(注意有些目录比较大、很占空间)
+
 
 [真机调试](http://yijiebuyi.com/blog/84b194d94e768e8eecd0de3a3a3da041.html)
 
 #### 打开 Android emulator (Android AVD Manager): 
-如果未设置环境变量, 到 <ANDROID_SDK>/tools 目录, 双击 android, 如果设置了Android环境变量, 命令行运行`android`会打开 
+如果未设置环境变量, 到 <ANDROID_SDK_root>/tools 目录, 双击 android, 如果设置了Android环境变量, 命令行运行`android`会打开 
 "Android SDK Manager"。再在菜单中选择 Tools -> Manage AVDs (或命令行运行`android avd`), 
 打开 "Android Virtual Device (AVD) Manager" 会看到虚拟机列表。
 如果为空, 点击按钮 "Create..." 创建虚拟机, 点击某个虚拟机, 如果右边按钮 "Start..." 不可点?
