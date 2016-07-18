@@ -47,3 +47,12 @@ apk 下载:
 打开 "Android Virtual Device (AVD) Manager" 会看到虚拟机列表。
 如果为空, 点击按钮 "Create..." 创建虚拟机, 点击某个虚拟机, 如果右边按钮 "Start..." 不可点?
 则点击按钮 "Edit..." 查看编辑框里的 "CPU/ABI" 选项是否有设置, 设置为何虚拟机列表里 "CPU/ABI" 列一样的值, 并把其他选项填写完善。
+
+向 avd 里粘贴文字:
+
+    只有一个虚拟机开着: adb shell input text 'text'
+    如果有多个,选择一个: 
+        adb devices
+        adb -s emulator-5554 shell input text 'my%stext'
+    如果有空格、特殊字符等, 会报错: Error: Invalid arguments for command: text usage: input ... 
+    对这些字符 ( ) < > | ; & * \ ~ " ' 加上反斜杠 \ 转义, 空格用 %s 转义
