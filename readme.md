@@ -41,6 +41,10 @@ apk 下载:
 
 [真机调试](http://yijiebuyi.com/blog/84b194d94e768e8eecd0de3a3a3da041.html)
 
+### 虚拟机调试 (react-native)
+- ios: cmd+d 打开菜单, cmd+r 刷新
+- Android: cmd+m 打开菜单, rr 刷新
+
 #### 打开 Android emulator (Android AVD Manager): 
 如果未设置环境变量, 到 <ANDROID_SDK_root>/tools 目录, 双击 android, 如果设置了Android环境变量, 命令行运行`android`会打开 
 "Android SDK Manager"。再在菜单中选择 Tools -> Manage AVDs (或命令行运行`android avd`), 
