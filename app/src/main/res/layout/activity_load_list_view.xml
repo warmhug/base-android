@@ -11,10 +11,12 @@
 
     <com.base.hua.baseandroid.LoadListView
         android:id="@+id/listview"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
         android:background="@color/white"
         android:cacheColorHint="#00000000"
-        android:dividerHeight="5dip" />
+        android:dividerHeight="5dip"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp" />
 
 </android.support.constraint.ConstraintLayout>
